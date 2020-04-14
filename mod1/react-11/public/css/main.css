@@ -1,0 +1,380 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+}
+
+
+.header {
+    background-attachment: fixed;
+    background-image: url('https://aceleradev-react.netlify.com/aula-01/public/img/capa-madmax2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+.header::after{
+    background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,212,255,0) 75%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+  
+}
+.navbar .container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+}
+.navbar .container .navbar-title{
+    display: inline-block;
+}
+
+.navbar .container .navbar-menu ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .container .navbar-menu ul li{
+    margin: 0 25px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar .container .navbar-menu  ul  li  a {
+    color: #fff;
+    font-size: .8em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.navbar .container .navbar-menu  ul  li  a:hover {
+    color: #e4bb23;
+}
+
+.navbar .container .data-user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar .container .data-user .data-user-img {
+    border-radius: 100%;
+    box-shadow: 0 2px 3px (0, 0, 0, 0.5);
+    height: 45px;
+    margin-right: 15px;
+    overflow: hidden;
+    width: 45px;
+}
+
+.navbar .container .data-user .data-user-img img{
+    width: 100%;
+    height: auto;
+}
+
+.navbar .container .data-user .data-user-name{
+    color: #fff;
+    font-size: em;
+    font-weight: bold;
+}
+
+.header .header-data {
+    width: 100%;
+}
+
+.header .header-data .container{
+    position: relative;
+    z-index: 2;
+}
+
+.header .header-data .container .header-data-title{
+    color: #fff;
+    font-size: 4.5em;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.header .header-data .container .header-data-genero{
+    display: flex;
+    margin: 15px 0 30px;
+    font-size: 13px;
+}
+
+.header .header-data .container .header-data-genero .header-data-genero-item {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.header .header-data .container .header-data-genero .header-data-genero-item:hover {
+    color: #e4bb23;
+}
+
+.header .header-data .container .header-data-botao {
+    display: inline-block;
+    padding: 15px 50px;
+    color: #000;
+    text-decoration: none;
+    background-color: #e4bb23;
+    border-radius: 40px;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.header .header-data .container .header-data-botao i {
+    font-size: 1.5em;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+
+.header .header-data .container .header-data-botao:hover {
+    background-color: #bc9a1d;
+}
+
+.header .header-data .container .header-more-info {
+    padding: 20px 0;
+    font-size: .8em;
+    color: #fff;
+}
+
+.header .header-data .container .header-more-info p:last-child {
+    color: #bc9a1d;
+}
+
+.main-catalogo{
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+.main-catalogo .menu .container .menu-lista {
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-catalogo .menu .container .menu-lista .menu-lista-item {
+    margin: 0 20px;
+}
+
+.main-catalogo .menu .container .menu-lista .menu-lista-item a {
+    color: #e4bb23;
+    display: inline-block;
+    padding: 25px 0;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .8em;
+    transition: all 0.2s;
+}
+
+.main-catalogo .menu .container .menu-lista .menu-lista-item a:hover {
+    box-shadow: inset 0 -1px 0 #e4bb23;
+}    
+
+.main-catalogo .catalogo-filmes-lista {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    overflow: hidden;
+    width: 24%;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item .item-filme-poster {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item .item-filme-poster img {
+    width: 100%;
+    height: auto;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item .item-filme-poster .item-filme-poster-info {
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    padding: 80px 20px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: all 0.2s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item .item-filme-poster .item-filme-poster-info h3 {
+    color: #e4bb23;
+    font-size: 1.5em;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin: 25px;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item .item-filme-poster .item-filme-poster-info a {
+    color: #fff;
+    font-size: 5em;
+    transition: all 0.2s;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item .item-filme-poster .item-filme-poster-info a:hover {
+    color: #e4bb23;
+}
+
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item:hover .item-filme-poster .item-filme-poster-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item .item-filme-sinopse {
+    padding: 10px;
+    width: 100%;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item .item-filme-sinopse .item-filme-sinopse-titulo {
+    font-size: .8em;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item .item-filme-sinopse .item-filme-sinopse-genero {
+    margin: 10px 0;
+    display: flex;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item .item-filme-sinopse .item-filme-sinopse-genero a {
+    text-decoration: none;
+    font-size: .8em;
+    color: #e4bb23;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item .item-filme-sinopse .item-filme-sinopse-genero a:hover {
+	text-decoration: underline;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item .item-filme-sinopse .item-filme-nota {
+    margin: 0;
+    align-items: center;
+    display: flex;
+    font-size: 1.3em;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item .item-filme-sinopse .item-filme-nota i {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.main-catalogo .catalogo-filmes-lista .catalogo-filmes-lista-item .item-filme-sinopse .item-filme-nota i:hover {
+	color: #e74c3c;
+}
+
+
+footer{
+    background-color: #fff  ;
+    color: #bababa;
+    padding: 15px 0;
+    text-align: center;
+    justify-content: space-between;
+	width: 100%;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+	display: flex;
+	margin: 10px 0;
+}
+
+footer ul li {
+    margin: 0 15px;
+    
+}
+
+footer ul li a {
+    font-size: 1.7em;
+	text-decoration: none;
+	color: #bababa;
+    transition: all 0.2s;
+}
+
+footer ul .icon-twitter:hover a{
+    color: #55acee;
+}
+
+footer ul .icon-facebook:hover a{
+    color: #3b5998;
+}
+
+footer ul .icon-instagram:hover a{
+    color: #e95950;
+}
