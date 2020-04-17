@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100vh;
+}
+
+body{
+    background: #eee;
+    display: grid;
+    place-content: center;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.card{
+    padding: 0 5em;
+}
+
+.card .card__header{
+    height: 100px;
+    width: 100%;
+    background: #e0466b;
+}
+
+.card .card__body{
+    padding: 1.5em;
+    background: #fff;
+}
+
+.card .card__body .card__description{
+    padding: 1em 0;
+}
+
+.card .card__body .card__list{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.card .card__body .card__list .card__item{
+    padding: 0.3em 0.5em;
+    margin-right: 0.5em;
+    background: #e6e6e6;
+    border-radius: 0.3em;
+    font-size: 0.85em;
+}
+
+.card .card__body .card__list .card__item--active{
+    background: #d4d4d4;
+    font-weight: bold;
+}
+
+.card .card__body .card__button{
+    background: #2c8973;
+    color: #fff;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    cursor: pointer;
+    border: none;
+}
+
+.card .card__body .card__button:hover{
+    background: #267764;
+}
+
+

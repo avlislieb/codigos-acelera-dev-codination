@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+button{
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+body{
+	padding-top: 56px;
+	font-family: 'Open Sans', sans-serif;
+	background: #fafafa;
+	color: #000;
+}
+
+header{
+	backface-visibility: hidden;
+	background-color: #fff;
+	padding: 8px 16px;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+	top: 0;
+	left: 0;
+}
+
+header .header__container{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header .header__container .container__logo{
+	display: inline-block;
+	height: 40px;
+}
+
+header .header__container .container__logo img{
+	height: 100%;
+}
+
+header .header__container .container__button{
+	font-size: 1.4em;
+}
+
+main .main__container{
+	width: 100%;
+	margin: 0 auto;
+}
+
+main .main__container .container__story{
+	width: 100%;
+	padding: 16px 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+main .main__container .container__story .section__story{
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+main .main__container .container__story .section__story .div__usersStory{
+	width: 78;
+	height: 78px;
+	margin: 0 .5em;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	display: flex;
+	overflow: hidden;
+}
+main .main__container .container__story .section__story .div__usersStory--active{
+	background: linear-gradient(rgba(245, 160, 77, 1) 0%, rgba(160, 15, 139, 1) 100%);
+}
+
+main .main__container .container__story .section__story .div__usersStory .div__usersStory_info{
+	height: 72px;
+	width: 72px;
+	border-radius: 100%;
+	border: 2px solid #fff;
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 2.5px;	
+}
+
+main .main__container .container__story .section__story .div__usersStory .div__usersStory_info img{
+	height: 100%;
+	width: 100%;
+}
+
+main .main__container .line-feed{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+
+}
+
+main .main__container .line-feed .card{
+	background-color: #fff;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, .1);
+	flex-direction: column;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+main .main__container .line-feed .card .card__header{
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 8px;
+}
+
+main .main__container .line-feed .card .card__header .card__header--infoUser {
+	display:flex;
+	align-items: center;
+}
+
+main .main__container .line-feed .card .card__header .card__header--buttonInfo {
+	font-size: 1.4rem;
+}
+
+main .main__container .line-feed .card .card__header .card__header--infoUser .card__header--userPhoto {
+	height: 48px;
+	margin-right: 8px;
+	width: 40px;
+	display:flex;
+	border-radius:100%;
+	overflow:hidden;
+}
+
+main .main__container .line-feed .card .card__header .card__header--infoUser .card__header--userPhoto img{
+	width: 100%;
+	height: 100%;
+}
+
+main .main__container .line-feed .card .card__header .card__header--infoUser .card__header--userName {
+	color: #000;
+	font-size: 1rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+main .main__container .line-feed .card .card__body{
+	width: 100%;
+	margin: 0;
+	height: auto;
+	overflow: hidden;
+}
+
+main .main__container .line-feed .card .card__body img{
+	width: 100%;
+}
+
+main .main__container .line-feed .card .card__footer .card__footer--controls{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 4px 0;
+}
+
+main .main__container .line-feed .card .card__footer .card__footer--control{
+	font-size: 1.5em;
+	margin: 0 8px;
+}
+
+main .main__container .line-feed .card .card__footer .card__footer--control:last-child{
+	margin-left: auto;
+	justify-self: flex-end;
+}
+
+main .main__container .line-feed .card .card__footer .card__footer--status{
+	display: flex;
+	padding: 8px;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+main .main__container .line-feed .card .card__footer .card__footer--status .card__footer--statusInfo{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+main .main__container .line-feed .card .card__footer .card__footer--status .card__footer--statusInfo .card__footer--statusInfoPhoto{
+	height: 30px;
+	width: 30px;
+	margin-right: 8px;
+	display: flex;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+main .main__container .line-feed .card .card__footer .card__footer--status .card__footer--statusInfo .card__footer--statusInfoPhoto img{
+	height: 100%;;
+}
+
+main .main__container .line-feed .card .card__footer .card__footer--status .card__footer--statusInfo span{
+	font-size: 1rem;
+}
+
+
+a{
+	text-decoration: none;
+	color:#000;
+	font-weight: bold;
+}
+
+
+@media screen and (min-width: 728px){
+	header .header__container,  main .main__container{
+		width: 728px;
+	}
+	main .main__container .line-feed{
+		padding: 16px 0;
+	}
+}
+
+
+
